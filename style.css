@@ -1,0 +1,201 @@
+@font-face {
+font-family: 'ChusaLove';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/ChusaLove.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+    font-family: 'MYYeongnamnu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SANGJUGyeongcheonIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes shot_ani {
+  from{
+   top: 120px ;
+   right : 200px ;
+  }
+ to{
+   top: 120px;
+   right: 100px;
+ }
+}
+@keyframes home2_ani {
+  from{
+    left: 700px;
+    bottom: 200px;
+  }
+  to{
+   left: 700px;
+   bottom: 290px;
+  }
+}
+@keyframes dog_ani {
+  from{
+    left: 1100px;
+    top: 510px;
+  }
+  to{
+    left: 1100px;
+    top: 420px;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x:hidden; overflow-y:auto;
+  margin: 0px 0px ;
+  background-color: #ebd4aa;
+  color : #333333;
+  font-family: 'SANGJUGyeongcheonIsland';
+}
+section{
+ width: 100%;
+ height: 100vh;
+}
+
+h2.home{
+  font-size: 70px;
+  position: relative;
+  top: 50px;
+  left: 250px;
+}
+p.home{
+  position: relative;
+  top: 30px;
+  left: 250px;
+  font-size: 
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ed9c07;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+.navlogo{
+  font-size: 60px;
+  font-family: 'ChusaLove';
+}
+
+a{
+  text-decoration: none;
+  color: #362a2a;
+}
+.navitems {
+font-family: 'MYYeongnamnu';
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  font-size: 25px;
+}
+.navitems li {
+  padding: 8px 60px;
+
+}
+.navitems li:hover {
+  background-color:DeepSkyBlue;
+  border-radius: 6px;
+}
+.navbar_hambug{
+  position: absolute;
+  right: 32px;
+  top : 20px;
+  font-size: 32px;
+  display: none;
+}
+@media screen and (max-width:768px) {
+ .navbar{
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .navitems{
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   display: none;
+ }
+.navitems li{
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+}
+.navicons {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+.navbar_hambug{
+  display: block;
+}
+
+.navicons.active {
+  display: block;
+}
+.navitems.active {
+  display: flex;
+}
+}
+.map{
+  position: absolute;
+  top : 1100px;
+  left: 50px;
+}
+.whatis{
+  position: absolute;
+  right: 400px;
+  top: 1050px;
+  font-size: 40px;
+  text-align: left;
+}
+
+.explain{
+  position: absolute;
+  font-size: 20px;
+  right: 120px;
+  top: 1250px;
+  text-align: left;
+}
+.shot{
+  position: absolute;
+  right: 80000px;
+  animation-name: shot_ani;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.order{
+  position: absolute;
+  right: 0px;
+  top: 150px;
+
+}
+
+.home2{
+  position: relative;
+  left: 700px;
+  bottom: 200px;
+  animation-name: home2_ani;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.dog{
+  position: absolute;
+  left: 1100px;
+  top: 510px;
+  animation-name: dog_ani;
+  animation-duration: 1.5s;
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
